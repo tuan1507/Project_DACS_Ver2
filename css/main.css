@@ -1,0 +1,408 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(../img/Canoe-Interior-Evening-Vibes-5170.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 0 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    margin-left: 200px;
+    flex: 1.5;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-contact {
+    flex: 1;
+    text-align: right;
+    color: #fff;
+}
+
+.nav-contact a {
+    color: white;
+}
+
+.nav-contact .fa-solid {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.nav-links ul li::after,
+.nav-contact .fa-solid::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    transition: .5s;
+    margin-top: 5px;
+}
+
+.nav-links ul li:hover::after,
+.nav-contact .fa-solid:hover::after {
+    width: 100%;
+}
+
+.textbox {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* line-height: 30px; */
+}
+
+.textbox h1 {
+    margin-bottom: 40px;
+    font-size: 62px;
+}
+
+.textbox p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 25px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #fff;
+    background: #f44336;
+    transition: 1s;
+    color: #fff;
+
+}
+
+/* ----------------body-welcome-------------------- */
+.body {
+    background: black;
+    color: #fff;
+}
+
+.body_welcome {
+    width: 85%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.body_welcome-text {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body_welcome h2 {
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.body_welcome-text-p {
+    width: 200%;
+    padding-top: 150px;
+
+}
+
+.body_welcome-text-p p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-left: 30px;
+    text-align: left;
+    margin-right: 20px;
+    margin-top: 24px;
+}
+
+.body_welcome-text-p-1 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 38px;
+    padding-left: 30px;
+    /* padding: 10px; */
+    text-align: left;
+    margin-right: 50px;
+}
+
+video {
+    width: 150%;
+    border-radius: 10px;
+}
+
+.body_welcome-text-p-1 p {
+    margin-top: 20px;
+}
+
+.body_welcome-text-p h3 {
+    font-size: 38px;
+    /* padding: 10px; */
+    padding-left: 30px;
+}
+
+.body_welcome-text-p-1 h3 {
+    font-size: 38px;
+    /* padding: 10px; */
+
+}
+
+.body_welcome-text img {
+    width: 50%;
+    height: 80%;
+}
+
+.body_welcome-text-btn {
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+/* -----------body-body----------- */
+.body_body {
+    width: 85%;
+    margin: auto;
+    padding-top: 90px;
+}
+
+.body_body h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.body_body .text {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+}
+
+.body_body .text p {
+    text-align: left;
+    margin-top: 3%;
+    font-size: 25px;
+}
+
+.body_body .text_1 {
+    margin-top: 50px;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+
+.body_body .text_1 p {
+    text-align: right;
+    margin-top: 3%;
+    font-size: 25px;
+
+}
+
+.body_body img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 80%;
+}
+
+.body_body-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.body_btn {
+    margin-left: 20%;
+    margin-top: -170px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.body_footer {
+    margin-top: 100px;
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../img/ivan-stern-LOLSb7m6XkU-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.body_footer-text {
+    background-color: rgba(51, 51, 51, 0.6);
+    width: 65%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.body_footer-text h2 {
+    font-size: 40px;
+}
+
+.body_footer-text p {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 26px;
+}
+
+/* ------------------------footer------------------------ */
+.footer {
+    background-color: black;
+    color: #fff;
+}
+
+.footer-text {
+    width: 85%;
+    margin: auto;
+    padding-top: 130px;
+    display: flex;
+
+}
+
+.footer-text-text {
+    flex-basis: 31%;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    padding: 10px;
+}
+
+.footer-text-video {
+    flex-basis: 31%;
+}
+
+.footer-contact {
+    margin-top: 20px;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-contact-add {
+    width: 45%;
+    display: flex;
+}
+
+.footer-contact .contact {
+    margin: 0 0 7px 0;
+    font-size: 20px;
+}
+
+.footer-contact .text {
+    margin-top: 5px;
+}
+
+.contact-col {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.footer-contact-add div {
+    margin-left: 10px;
+}
+
+.red-btn {
+    font-size: 13px;
+    width: 50%;
+}
+
+.follow-us {
+    font-size: 25px;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    margin-top: -100px;
+}
+
+.follow-us div {
+    margin: 0 20px 0 30px;
+}
+
+.follow-us div .fa-brands {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.fa-facebook {
+    padding: 0;
+    outline: black;
+    color: #3B5998;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 0;
+}
+
+.fa-instagram {
+    color: #E4405F;
+    /* background-color: #FFF; */
+    /* border: 1px solid #833AB4; */
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
