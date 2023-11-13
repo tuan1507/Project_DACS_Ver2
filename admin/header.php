@@ -19,7 +19,7 @@
         <div class="header-1">
             <p>Admin</p>
             <form action="" class="search-form">
-                <input type="search" name="" id="search-box" placeholder="Search here...">
+                <input type="search" name="" id="search-box" placeholder="Tìm kiếm...">
                 <label for="search-box" class="fas fa-search"></label>
             </form>
 
@@ -33,8 +33,7 @@
 
         <div class="header-2">
             <nav class="navbar">
-                <a href="http://localhost/1.PHP/3.Project/7.DoAnCS2/">Home</a>
-                <a href="#home">Shop</a>
+                <a href="index.php?act=add_dmsp">Danh mục</a>
                 <a href="#home">Order</a>
                 <a href="#home">About</a>
                 <a href="#contact">Contact</a>

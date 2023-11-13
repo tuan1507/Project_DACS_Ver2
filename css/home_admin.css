@@ -20,6 +20,9 @@
     transition:  all .2s linear;
     transition:  width none;
 }
+.body {
+    height: 200rem;
+}
 
 html {
     font-size: 62.5%;

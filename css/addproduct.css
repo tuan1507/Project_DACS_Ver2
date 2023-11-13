@@ -49,10 +49,19 @@ label {
 /* ----------------table--------------------- */
 table {
     margin: auto;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     border-collapse: collapse;
     width: 80%;
   }
+table th {
+  font-size: 2rem;
+}
+table td {
+  font-size: 2rem;
+}
+table a{
+  font-size: 2rem;
+}
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
@@ -61,3 +70,7 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
   }
+.btn_delete_update {
+  align-items: center;
+  text-align: center;
+}
