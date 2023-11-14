@@ -7,7 +7,7 @@ if (is_array($danhmuc)) {
     <div>
         <h2>Cập nhật danh mục sản phẩm</h2>
     </div>
-    <form method="post" action="index.php?act=capnhatdanhmuc">
+    <form method="post" action="index.php?act=capnhatdanhmuc" enctype="multipart/form-data">
         <div class="row">
             <div class="col-25">
                 <label for="fname">ID danh mục:</label>

@@ -34,7 +34,7 @@
         <div class="header-2">
             <nav class="navbar">
                 <a href="index.php?act=add_dmsp">Danh mục</a>
-                <a href="#home">Order</a>
+                <a href="index.php?act=add_sp">Sản phẩm</a>
                 <a href="#home">About</a>
                 <a href="#contact">Contact</a>
             </nav>

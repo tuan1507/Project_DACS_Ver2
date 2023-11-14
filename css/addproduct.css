@@ -49,9 +49,8 @@ label {
 /* ----------------table--------------------- */
 table {
     margin: auto;
-    /* font-size: 2rem; */
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
   }
 table th {
   font-size: 2rem;

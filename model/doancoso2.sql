@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 13, 2023 lúc 05:33 PM
+-- Thời gian đã tạo: Th10 14, 2023 lúc 05:56 PM
 -- Phiên bản máy phục vụ: 10.4.27-MariaDB
 -- Phiên bản PHP: 8.2.0
 
@@ -51,7 +51,7 @@ INSERT INTO `danhmucsanpham` (`id_danhmuc`, `ten_danhmuc`, `mota_danhmuc`) VALUE
 
 CREATE TABLE `sanpham` (
   `id_sanpham` int(11) NOT NULL,
-  `ten_sanpham` varchar(11) NOT NULL,
+  `ten_sanpham` varchar(255) NOT NULL,
   `soluong_sanpham` int(11) NOT NULL,
   `giasp` double NOT NULL,
   `giasp_saukm` double NOT NULL,
@@ -59,6 +59,14 @@ CREATE TABLE `sanpham` (
   `mota_sanpham` text NOT NULL,
   `id_danhmuc_sanpham` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `sanpham`
+--
+
+INSERT INTO `sanpham` (`id_sanpham`, `ten_sanpham`, `soluong_sanpham`, `giasp`, `giasp_saukm`, `hinhanh_sanpham`, `mota_sanpham`, `id_danhmuc_sanpham`) VALUES
+(19, 'Logitech G304', 10, 990000, 799000, 'mouse_1.png', 'Chuột chơi game không dây LIGHTSPEED được thiết kế cho hiệu suất thực sự với các đột phá công nghệ mới nhất. Tuổi thọ pin 250 giờ đầy ấn tượng. Giờ đây có nhiều màu sắc rực rỡ.', 13),
+(20, 'Tai nghe Audio-technica ATH-M40X', 5, 3990000, 2750000, 'headphone_2.png', 'Nếu bạn đang tìm kiếm một cặp tai nghe phòng thu / DJ chất lượng mà không muốn bỏ ra quá nhiều chi phí để sở hữu thì Audio-Technica ATH-M40x là một lựa chọn tuyệt vời. Với mức giá chỉ khoảng 3 triệu đồng, bạn sẽ có cơ hội được tận hưởng những phút giây giải trí tuyệt vời cùng âm thanh chân thực và sống động nhất.', 14);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -91,7 +99,7 @@ ALTER TABLE `danhmucsanpham`
 -- AUTO_INCREMENT cho bảng `sanpham`
 --
 ALTER TABLE `sanpham`
-  MODIFY `id_sanpham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_sanpham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
