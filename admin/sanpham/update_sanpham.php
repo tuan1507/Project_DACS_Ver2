@@ -87,8 +87,9 @@ if (is_array($sanpham)) {
             </div>
         </div>
         <div class="btn_controler">
+            <input type="hidden" name="id" value="<?php if (isset($id_sanpham)&&($id_sanpham>0)) echo $id_sanpham;?>">
             <a href=""><input type="submit" value="Thêm" name="themsanpham" class="btn btn_add_product"></a>
-            <input type="submit" value="Cập nhật" class="btn btn_add_product">
+            <input type="submit" value="Cập nhật" name="capnhatsanpham" class="btn btn_add_product">
         </div>
     </form>
 </div>

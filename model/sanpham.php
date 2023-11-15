@@ -18,8 +18,9 @@ function loadone_sanpham($id) {
     $sanpham = pdo_query_one($sql);
     return $sanpham;
 }
-// function update_danhmuc($ten_danhmuc,$mota_danhmuc,$id_danhmuc) {
-//     $sql = "UPDATE danhmucsanpham SET ten_danhmuc='".$ten_danhmuc."', mota_danhmuc='".$mota_danhmuc."' where id_danhmuc=".$id_danhmuc;
-//                 pdo_execute($sql);
-// }
+function   update_sanpham($tensanpham,$soluongsanpham,$giasanpham,$giasanphamkm,$filename,$motasanpham,$iddanhmuc,$id_sanpham) {
+    $sql = "UPDATE sanpham SET ten_sanpham='".$tensanpham."', soluong_sanpham = '".$soluongsanpham."',giasp ='".$giasanpham."',
+    giasp_saukm ='".$giasanphamkm."', hinhanh_sanpham ='".$filename."',mota_sanpham='".$motasanpham."',id_danhmuc_sanpham = '".$iddanhmuc."' where id_sanpham=".$id_sanpham;
+                pdo_execute($sql);
+}
 ?>

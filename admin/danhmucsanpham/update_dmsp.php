@@ -36,8 +36,8 @@ if (is_array($danhmuc)) {
         <div class="btn_controler">
             <input type="hidden" name="id" value="<?php if (isset($id_danhmuc)&&($id_danhmuc>0)) echo $id_danhmuc;?>">
             <a href=""><input type="submit" value="Thêm" name="themdanhmuc" class="btn btn_add_product"></a>
-            <a href="index.php?act=add_dmsp"><input type="" value="Danh sách" class="btn btn_add_product"></a>
             <input type="submit" value="Cập nhật" name="capnhat" class="btn btn_add_product">
+            <input type="submit" value="Danh sách" name="danhsachdm" class="btn btn_add_product">
         </div>
     </form>
 </div>

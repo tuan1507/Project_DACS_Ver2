@@ -16,6 +16,10 @@ if (isset($_GET['act'])) {
             $listdanhmuc = loadall_danhmuc();
             include("danhmucsanpham/add_dmsp.php");
             break;
+        case "danhsachdm":
+            $listdanhmuc = loadall_danhmuc();
+            include("danhmucsanpham/add_dmsp.php");
+            break;
         case "xoadm":
                 if(isset($_GET['id'])&&($_GET['id']>0)){
                     delete_danhmuc($_GET['id']);
@@ -52,6 +56,7 @@ if (isset($_GET['act'])) {
                 $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
                 $motasanpham=$_POST['motasanpham'];
                 $iddanhmuc=$_POST['iddanhmuc'];
+
                 if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
                   }
                 insert_sanpham($tensanpham,$soluongsanpham,$giasanpham,$giasanphamkm,$filename,$motasanpham,$iddanhmuc);
@@ -76,15 +81,27 @@ if (isset($_GET['act'])) {
                 include("sanpham/update_sanpham.php");
                 break;
         case "capnhatsanpham":
-                    // if(isset($_POST['capnhat'])&&($_POST['capnhat'])) {
-                    //     $tendanhmuc=$_POST['tendanhmuc'];
-                    //     $motadanhmuc=$_POST['motadanhmuc'];
-                    //     $iddanhmuc=$_POST['id'];
-                    //     update_danhmuc($tendanhmuc,$motadanhmuc,$iddanhmuc);
-                    // }
-                    // $listdanhmuc= loadall_danhmuc();
-                    include("sanpham/update_sanpham.php");
-                    break;
+            if(isset($_POST['capnhatsanpham'])&&($_POST['capnhatsanpham'])) {
+
+                $tensanpham=$_POST['tensanpham'];
+                $soluongsanpham=$_POST['soluongsanpham'];
+                $giasanpham=$_POST['giasanpham'];
+                $giasanphamkm=$_POST['giasanphamkm'];
+                $filename=$_FILES['hinh']['name'];
+                $target_dir = "../upload/";
+                $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
+                $motasanpham=$_POST['motasanpham'];
+                $iddanhmuc=$_POST['iddanhmuc'];
+                $idsanpham=$_POST['id'];
+                if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
+                  }
+            }
+            update_sanpham($tensanpham,$soluongsanpham,$giasanpham,$giasanphamkm,$filename,$motasanpham,$iddanhmuc,$idsanpham);
+            $listsanpham= loadall_sanpham();
+            $listdanhmuc= loadall_danhmuc();
+            $sanpham = loadone_sanpham($idsanpham);
+            include("sanpham/add_sanpham.php");
+            break;
     }
 }
 ?>
